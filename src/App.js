@@ -1,4 +1,7 @@
 import React from 'react';
+
+import Send from './components/Sendsms'
+import Dashboard from './components/Dashboard'
 import './App.css';
 
 function App() {
@@ -8,6 +11,8 @@ function App() {
         <p>
           REMINDERER
         </p>
+        <Dashboard />
+        <Send />
         <a
           className="App-link"
           href="https://reactjs.org"
