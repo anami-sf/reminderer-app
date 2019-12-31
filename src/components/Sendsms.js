@@ -4,11 +4,12 @@ import '../App.css'
 class Send extends Component {
 
     onClick = () => {
-        const URL = 'https://remindererapiv2.herokuapp.com/notifications/notify'
+        //const URL = 'https://remindererapiv2.herokuapp.com/notifications/notify'
+        const URL = 'http://localhost:3000/notifications/notify'
         
         fetch( URL, { method: 'post' })
             .then((response) => {
-                console.log("Message Sent!");
+                console.log(response);
             })
     }
 
@@ -18,7 +19,6 @@ class Send extends Component {
             type="button" 
             value="Send" 
             onClick={this.onClick} 
-            className="App-header"
         >
             Send
         </button>        
